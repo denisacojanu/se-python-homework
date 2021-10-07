@@ -11,13 +11,17 @@
         4: 'd'
     }
 """
-
+from pprint import pprint
 # In variabila l1 si l2 avem urmtoarele liste:
 l1 = [1, 2, 3, 4]
 l2 = ['a', 'b', 'c', 'd']
 
 # In varaibila d1 avem un dictionar gol
 d1 = {}
+
+# Rezolvare
+d1.update({ 1: "a", 2: "b", 3:"c", 4:"d" })
+pprint(d1, width=2, indent=4)
 
 # Afisam listele l1 si l2
 print(l1, l2)

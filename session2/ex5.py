@@ -2,6 +2,7 @@
     Ex. 5: Modificati urmatoarea bucata de cod astfel incat
     la rulare, sa afisati toate valorile dictionarului d1
 """
+import pprint
 
 # In variabila d1 vom salva urmatorul dictionar:
 d1 = {
@@ -11,3 +12,7 @@ d1 = {
 
 # Afisam tate cheile dictionarului d1, folosind metoda keys()
 print(d1.keys())
+
+# Rezolvare - Afisam toate valorile dictionarului d1
+print(d1.values())
+

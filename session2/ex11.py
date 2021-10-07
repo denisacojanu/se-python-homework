@@ -12,3 +12,16 @@
         5
         cate un singur numar pe linie.
 """
+# Rezolvare
+
+# In x vom salva valoarea care vine de la tastatura
+x = input()
+
+# Convertim valoare pe care o primim de la tastatura intr-un intreg
+x = int(x)
+
+# Parcugem numerele de la 0 la x si afisam toate numerele impare
+for i in range(x+1):
+    if i % 2 == 1:
+        print(i)
+
