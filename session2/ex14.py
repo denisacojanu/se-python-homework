@@ -6,3 +6,8 @@
         Veti primi: 'cmi'
         Veti printa: 3
 """
+
+x = input()
+
+# Functia len returneaza numarul de caractere al string-ului
+print(len(x))
