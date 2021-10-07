@@ -10,6 +10,12 @@ l2 = [5, 6, 7]
 
 # Afisam listele l1 si l2 separat.
 # Pentru a vedea rezultatul, rulati acest script.
-print("Prima lista: ", l1)
-print("A doua lista: ", l2)
+print(l1)
+print(l2)
+
+# Metoda 1
 print("Listele concatenate: ", l1+l2)
+
+# Metoda 2
+l1.extend(l2)
+print("Listele concatenate: ", l1)
