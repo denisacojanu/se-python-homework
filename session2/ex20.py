@@ -16,3 +16,27 @@
             2: 'i'
         }
 """
+# Rezolvare
+
+from pprint import pprint
+a = input()
+x = input()
+x = int(x)
+
+while x != len(a):
+    print("Numarul introdus este mai mare decat lungimea stringului. ")
+    print("Introduceti alt numar: ")
+    x = int(input())
+
+l1 = []
+l2 = []
+
+for i in range(x):
+    l1.append(i)
+
+for i in a:
+    l2.append(i)
+
+d1 = dict(zip(l1, l2))
+pprint(d1, width=2)
+

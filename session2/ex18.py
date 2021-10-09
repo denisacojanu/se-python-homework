@@ -7,3 +7,10 @@
         Veti primi: 'Center for Intelligent Machines', 2, 5
         Veti printa: 'nter'
 """
+# Rezolvare
+
+a = input("Introduceti stringul: ")
+x, y = input("Introduceti cele 2 numere intregi: ").split()
+x = int(x)
+y = int(y)
+print(a[x:y+1])

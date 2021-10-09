@@ -6,3 +6,7 @@
         Veti primi: 'cmi'
         Veti printa: ('c', 'm', 'i')
 """
+
+# Rezolvare
+a = input()
+print(tuple(a))
