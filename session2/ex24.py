@@ -14,3 +14,25 @@
         Veti primi: 1232
         Veti printa: False
 """
+
+# Rezolvare
+# a = int(input())
+# flag = False
+# z = str(a)
+# for i in range(0, int(len(z)/2)):
+#     if z[i] == z[len(z)-i-1]:
+#         flag = True
+# print(flag)
+
+# Rezolvare 2
+x = int(input("Enter a number: "))
+temp = x
+rev = 0
+while x > 0:
+    digit = x % 10
+    rev = rev * 10 + digit
+    x = x // 10
+if temp == rev:
+    print(True)
+else:
+    print(False)
