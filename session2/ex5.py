@@ -14,5 +14,5 @@ d1 = {
 print(d1.keys())
 
 # Rezolvare - Afisam toate valorile dictionarului d1
-print(d1.values())
+print(f"Afisam toate valorile dictionarului: {d1.values()}")
 

@@ -16,13 +16,13 @@
 """
 
 # Rezolvare
-# a = int(input())
-# flag = False
-# z = str(a)
-# for i in range(0, int(len(z)/2)):
-#     if z[i] == z[len(z)-i-1]:
-#         flag = True
-# print(flag)
+a = int(input())
+flag = False
+z = str(a)
+for i in range(0, int(len(z)/2)):
+    if z[i] == z[len(z)-i-1]:
+        flag = True
+print(flag)
 
 # Rezolvare 2
 x = int(input("Enter a number: "))

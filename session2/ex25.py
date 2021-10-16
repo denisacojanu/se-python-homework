@@ -9,11 +9,14 @@
         Veti printa prima data: [1, 3, 4, 5, 5]
         Veti prina a doua oara: {1, 3, 4, 5}
 """
-# Rezolvare metoda 1 partiala ( daca introduci un string diferit de exit, crapa programul)
+# Rezolvare
 x = input("Enter a number: ")
 l1 = []
 while x != "exit":
-    l1.append(int(x))
+    if x.isdigit():  # Verifica daca valoarea lui x contine doar cifre
+        l1.append(int(x))
+    else:
+        print("Numarul introdus nu este un numar intreg si nu se poate adauga la lista")
     x = input("Enter a number: ")
 print(l1)
 

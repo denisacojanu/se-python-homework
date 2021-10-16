@@ -14,8 +14,8 @@ print(l1)
 print(l2)
 
 # Metoda 1
-print("Listele concatenate: ", l1+l2)
+print(f"Listele concatenate: {l1 + l2}")
 
 # Metoda 2
 l1.extend(l2)
-print("Listele concatenate: ", l1)
+print(f"Listele concatenate: {l1}")

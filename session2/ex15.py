@@ -15,4 +15,4 @@ nr_vocale = 0
 for i in x:
     if i in vocale:
         nr_vocale += 1
-print("Numarul de vocale: ", nr_vocale)
+print(f"Numarul de vocale: {nr_vocale} ")

@@ -20,8 +20,8 @@ d1[2] = 'CMI'
 d1[3] = 'CMI3'
 
 # Afisam dictionarul dupa schimbare
-print("Metoda 1: ", d1)
+print(f"Metoda 1: {d1}")
 
 # Metoda 2
 d1.update({3: 'CMI3'})
-print("Metoda 2: ", d1)
+print(f"Metoda 2: {d1}")

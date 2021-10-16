@@ -39,5 +39,5 @@ for i in x:
         nr_vocale += 1
     else:
         nr_consoane += 1
-print("Numarul de vocale este: ", nr_vocale)
-print("Numarul de consoane este: ", nr_consoane)
+print(f"Numarul de vocale este: {nr_vocale}")
+print(f"Numarul de consoane este: {nr_consoane}")

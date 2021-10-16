@@ -13,4 +13,4 @@ l1 = [1, 2, 3, 4]
 l1.append(10)
 
 # Afisam lista. Pentru a vedea rezultatul, rulati acest script.
-print(l1)
+print(f"Afisam lista: {l1}")

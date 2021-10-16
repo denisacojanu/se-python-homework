@@ -17,4 +17,4 @@ while x != 'stop':
     x = input()
 
 # Afisam lista l1.
-print(l1)
+print(f"Afisam lista: {l1}")

@@ -17,4 +17,4 @@ l1 = list(t1) + list(t2)
 l1.insert(2, 2)
 
 # Afisam lista
-print(l1)
+print(f"Afisam lista: {l1}")
