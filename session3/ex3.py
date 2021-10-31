@@ -9,8 +9,8 @@
     Rezultatul trebuie sa arate asa:
         - pentru x = 3 --> [0, 1, 2]
 """
-# Rezolvare
-n = int(input("Introduceti un numar: "))
+
+n = int(input("Give me a number: "))
 
 
 def func(x):
@@ -23,6 +23,4 @@ def func(x):
 
 
 l2 = func(n)
-print(f"Lista cu elementele pana la {n} este: {l2}")
-
-
+print(f"The list with elements until {n} is: \n{l2}")

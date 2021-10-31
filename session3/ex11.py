@@ -8,6 +8,18 @@
 """
 
 
-# decorate me
+def my_dec(func):
+    def wrapper():
+        result = func()
+        with open("output11.data", "w") as file:
+            file.write(result)
+
+    return wrapper
+
+
+@my_dec
 def f():
     return "CMI"
+
+
+f()

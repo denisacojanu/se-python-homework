@@ -12,3 +12,14 @@
     Observatii:
         - functia trebuie sa aiba MAXIM 1 linie de cod ca si body
 """
+
+
+def final_word(prx, wrd, sfx):
+    """The function returns a concatenated string"""
+    return prx + wrd + sfx
+
+
+prefix = input("Give me a prefix: ")
+word = input("Give me a word: ")
+suffix = input("Give me a suffix: ")
+print(f"Final word is: {final_word(prefix, word, suffix)}")
