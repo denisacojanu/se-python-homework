@@ -32,15 +32,31 @@ def add_prefix(pfx, rand_str):
 
 # Nu am spus ca stringul generat aleator trebuie sa contina toate literele
 def generate_random_str(str_length):
-    rand_str = ''
+    rand_str = ""
     while str_length:
         str_length -= 1
-        rand_str += random.choice(['a', 'x', 'c', 'm', 'i'])
+        rand_str += random.choice(["a", "x", "c", "m", "i"])
     print(f"The generated string is {rand_str}")
     return rand_str
 
 
-prefix = input('Give me an prefix\n')
-x = int(input('Give me a number to generate the random string\n'))
+def add_suffix(pfx, rdn_string, sfx):
+    word_without_suffix = add_prefix(pfx, rdn_string)
+    attempts = 2
+    while attempts >= 0:
+        if len(set(pfx).intersection(sfx)) == 0:
+            return word_without_suffix + sfx
+        else:
+            print("Given suffix is not correct! ")
+            sfx = input("Give me another suffix: \n")
+        attempts = attempts - 1
+    return word_without_suffix
 
-print(add_prefix(prefix, generate_random_str(x)))
+
+prefix = input("Give me an prefix: \n")
+suffix = input("Give me an suffix: \n")
+x = int(input("Give me a number to generate the random string: \n"))
+random_string = generate_random_str(x)
+
+print(f"The word without suffix is: {add_prefix(prefix, random_string)}")
+print(f"The final word is: {add_suffix(prefix, random_string, suffix)}")
