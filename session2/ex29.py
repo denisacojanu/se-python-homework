@@ -12,28 +12,35 @@
 
 # Rezolvare metoda 1
 x = input("Introduceti un cuvant: ")
-vocale = ['a', 'e', 'i', 'o', 'u']
+vocale = ["a", "e", "i", "o", "u"]
 
 nr_vocale = 0
 nr_consoane = 0
 
-x = x.replace(' ', '')  # Am adaugat replace deoarece daca introducem 2 cuvinte, spatiul era vazut ca o consoana
+"""
+    Am adaugat replace deoarece daca introducem
+    2 cuvinte, spatiul era vazut ca o consoana
+ """
+x = x.replace(" ", "")
 for i in x:
     if i in vocale:
         nr_vocale += 1
-    elif i not in vocale and i != ' ':
+    elif i not in vocale and i != " ":
         nr_consoane += 1
 print("Numarul de vocale este: ", nr_vocale)
 print("Numarul de consoane este: ", nr_consoane)
 
 # Rezolvare metoda 2
 x = input("Introduceti un cuvant: ")
-vocale = ['a', 'e', 'i', 'o', 'u']
+vocale = ["a", "e", "i", "o", "u"]
 
 nr_vocale = 0
 nr_consoane = 0
-
-x = x.replace(' ', '')  # Am adaugat replace deoarece daca introducem 2 cuvinte, spatiul era vazut ca o consoana
+"""
+    Am adaugat replace deoarece daca introducem
+    2 cuvinte, spatiul era vazut ca o consoana
+ """
+x = x.replace(" ", "")
 for i in x:
     if i in vocale:
         nr_vocale += 1

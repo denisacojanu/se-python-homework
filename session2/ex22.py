@@ -6,11 +6,11 @@
         Veti primi: 'center'
         Veti printa: 'CeNtEr'
 """
-#Rezolvare metodata 1 cu liste
+# Rezolvare metodata 1 cu liste
 x = input()
-#declaram o lista goala
+# declaram o lista goala
 l1 = []
-#caracterele din x le punem in lista l1
+# caracterele din x le punem in lista l1
 l1[:0] = x
 l2 = []
 for i in range(len(l1)):
@@ -19,11 +19,14 @@ for i in range(len(l1)):
     else:
         l2.append(l1[i].lower())
 
-#in x punem elementele din lista l2 care contine caracterele de pe pozitiile pare cu litere mari
-x = ''.join(map(str, l2))
+"""
+    In x punem elementele din lista l2 care contine 
+    caracterele de pe pozitiile pare cu litere mari
+"""
+x = "".join(map(str, l2))
 print(x)
 
-#Rezolvare metoda 2 fara liste
+# Rezolvare metoda 2 fara liste
 x = input()
 y = ""
 for i in range(len(x)):
@@ -32,6 +35,3 @@ for i in range(len(x)):
     else:
         y = y + x[i].lower()
 print(y)
-
-
-

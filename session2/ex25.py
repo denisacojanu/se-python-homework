@@ -16,10 +16,10 @@ while x != "exit":
     if x.isdigit():  # Verifica daca valoarea lui x contine doar cifre
         l1.append(int(x))
     else:
-        print("Numarul introdus nu este un numar intreg si nu se poate adauga la lista")
+        print("Numarul introdus nu este un numar"
+              " intreg si nu se poate adauga la lista")
     x = input("Enter a number: ")
 print(l1)
 
-s1 = {}
 s1 = set(l1)
 print(s1)
