@@ -16,3 +16,24 @@
             }
 
 """
+import json
+import random
+from string import ascii_letters
+
+
+def create_json_file(my_string):
+    l1 = []
+    l2 = []
+    l1 = list(random.sample(range(0, 10), 4))
+
+    for a in range(4):
+        l2.append("".join(random.choices(ascii_letters, k=random.randint(3, 6))))
+
+    d1 = dict(zip(l1, l2))
+
+    with open(my_string + ".json", "w") as file:
+        json.dump(d1, file, indent=4)
+
+
+user_input = input("Give me a string: ")
+create_json_file(user_input)

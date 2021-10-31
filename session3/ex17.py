@@ -19,3 +19,25 @@
             cmicmi
             b
 """
+
+from random import choice
+from string import ascii_letters
+
+
+def my_dec(func):
+    def log_output_function(z):
+        result = func(z)
+        with open("output17.data", "a") as file:
+            file.write(f"{result}\n")
+
+    return log_output_function
+
+
+@my_dec
+def f(x):
+    """Function returns a random string with lengh = x"""
+    return "".join(choice(ascii_letters) for i in range(x))
+
+
+y = int(input("Give me a number: "))
+f(y)

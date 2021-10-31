@@ -12,3 +12,22 @@
         daca apelez get_me_numbers(3)
             --> (3 + 5) * 5 + 3 = 43
 """
+
+
+def get_me_numbers(x):
+    """
+        Function with internal function: multiply_by_5
+        Return an number after some operations
+    """
+
+    def multiply_by_5(y):
+        return y * 5
+
+    x = x + 5
+    x = multiply_by_5(x)
+    x = x + 3
+    return x
+
+
+user_input = int(input("Give me a number: "))
+print(f"Result: {get_me_numbers(user_input)}")
